@@ -24,9 +24,9 @@ RelationClasses_PER [label="PER", URL=<RelationClasses.html#PER>, fillcolor="#E2
 RelationClasses_Build_PER [label="Build_PER", URL=<RelationClasses.html#Build_PER>, fillcolor="#7FAAFF"] ;
 Morphisms_Proper [label="Proper", URL=<Morphisms.html#Proper>, fillcolor="#F070D1"] ;
 Morphisms_respectful [label="respectful", URL=<Morphisms.html#respectful>, fillcolor="#F070D1"] ;
-Basics_flip [label="flip", URL=<Basics.html#flip>, fillcolor="#F070D1"] ;
 Basics_impl [label="impl", URL=<Basics.html#impl>, fillcolor="#F070D1"] ;
 Morphisms_trans_sym_co_inv_impl_morphism_obligation_1 [label="trans_sym_co_inv_impl_morphism_obligation_1", URL=<Morphisms.html#trans_sym_co_inv_impl_morphism_obligation_1>, fillcolor="#7FFFD4"] ;
+_flip [label="flip", URL=<.html#flip>, fillcolor="#F070D1"] ;
 RelationClasses_PER_Symmetric [label="PER_Symmetric", URL=<RelationClasses.html#PER_Symmetric>, fillcolor="#7FFFD4"] ;
 RelationClasses_symmetry [label="symmetry", URL=<RelationClasses.html#symmetry>, fillcolor="#7FFFD4"] ;
 RelationClasses_PER_Transitive [label="PER_Transitive", URL=<RelationClasses.html#PER_Transitive>, fillcolor="#7FFFD4"] ;
@@ -73,8 +73,8 @@ RelationClasses_transitivity [label="transitivity", URL=<RelationClasses.html#tr
   Morphisms_Proper -> Relation_Definitions_relation [] ;
   Morphisms_respectful -> Relation_Definitions_relation [] ;
   Morphisms_trans_sym_co_inv_impl_morphism_obligation_1 -> Morphisms_respectful [] ;
-  Morphisms_trans_sym_co_inv_impl_morphism_obligation_1 -> Basics_flip [] ;
   Morphisms_trans_sym_co_inv_impl_morphism_obligation_1 -> Basics_impl [] ;
+  Morphisms_trans_sym_co_inv_impl_morphism_obligation_1 -> _flip [] ;
   Morphisms_trans_sym_co_inv_impl_morphism_obligation_1 -> RelationClasses_PER_Symmetric [] ;
   Morphisms_trans_sym_co_inv_impl_morphism_obligation_1 -> RelationClasses_symmetry [] ;
   Morphisms_trans_sym_co_inv_impl_morphism_obligation_1 -> RelationClasses_PER_Transitive [] ;
@@ -84,7 +84,7 @@ RelationClasses_transitivity [label="transitivity", URL=<RelationClasses.html#tr
   RelationClasses_PER_Transitive -> RelationClasses_PER [] ;
   RelationClasses_transitivity -> RelationClasses_Transitive [] ;
 subgraph cluster_Basics { label="Basics"; fillcolor="#FFFFC3"; labeljust=l; style=filled 
-Basics_impl; Basics_flip; };
+Basics_impl; };
 subgraph cluster_RelationClasses { label="RelationClasses"; fillcolor="#FFFFC3"; labeljust=l; style=filled 
 RelationClasses_transitivity; RelationClasses_PER_Transitive; RelationClasses_symmetry; RelationClasses_PER_Symmetric; RelationClasses_Build_PER; RelationClasses_PER; RelationClasses_Equivalence_Symmetric; RelationClasses_Equivalence_Transitive; RelationClasses_Transitive; RelationClasses_Reflexive; RelationClasses_Symmetric; RelationClasses_Build_Equivalence; RelationClasses_Equivalence; RelationClasses_Equivalence_PER; };
 subgraph cluster_Morphisms { label="Morphisms"; fillcolor="#FFFFC3"; labeljust=l; style=filled 
